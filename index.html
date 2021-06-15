@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Term project</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="bike/bike.css">
+        <link rel="stylesheet" href="tennis/tennis.css">
+        <!--<link rel="stylesheet" href="dot/natto.css">-->
+        <link rel="stylesheet" href="bow/bow.css">
+        <!--<script src="sound/js/sound.js"></script>-->
+        <link rel="stylesheet" href="firework/firework.css">
+        <script src="shake.js"></script>
+    </head>
+    <body id="page-top">
+        
+        <audio id="audio1" >
+            <source src="sound/MP_Another Good Day.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+        <audio id="audio2">
+            <source src="sound/테니스.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+          <audio id="audio3">
+            <source src="sound/국궁.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+          <audio id="audio4">
+            <source src="sound/자전거.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+          <audio id="audio5">
+            <source src="sound/만세운동.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+        
+        
+        
+        <header class="masthead first d-flex align-items-center" id="first">
+            <div class="container px-4 px-lg-5 text-center">
+                <a class="btn btn-primary btn-xl" href="#second" onclick="pause1(),play2()">다음으로</a>
+                <!--<canvas id="nokey" width="800" height="800"></canvas>-->
+                <script src="dot/natto.js"></script>
+            </div>
+        </header>
+        <header class="masthead second d-flex " id="second">
+            <div class="container px-4 px-lg-5 text-center">
+                <div id="all"> 
+                    <div id="pongTable">
+                    <div style="float: right; width: 50%; height: 50%; border-left: 2px dashed #DDD;"> </div>
+                    </div>
+                    <div id="playerOne" style="left: 45px; top: 146px">  </div>
+                    <div id="playerTwo" style="left: 390px; top: 146px"> </div>
+                    <div id="ball" style="left: 210px; top: 160px"> </div>
+                    <div id="click">누르면 움직입니다!</div>
+                    <div id="scores">
+                    <span style="float: left;" id="oneScore">0</span>
+                    <span style="float: right;" id="twoScore">0</span>
+                    </div></div> 
+                        <script src="tennis/tennis.js"></script>
+                <a class="btn btn-primary btn-xl" href="#third" onclick="pause2(), play3()">다음으로</a>
+            </div>
+        </header>
+        <header class="masthead third d-flex align-items-center" id="third">
+            <div class="container px-4 px-lg-5 text-center">
+                <canvas id="area" width="640" height = "640"></canvas>
+                <div id="scoreboard">
+                    <h2 id="gravity"></h2> <!--점수판텍스트 오류로 지움-->
+                    <h3 id="points"></h3>
+                </div>
+                <script src="bow/bow.js"></script>
+                <a class="btn btn-primary btn-xl" href="#fourth" onclick="pause3(),play4()">다음으로</a>
+            </div>
+        </header>
+        <header class="masthead fourth d-flex" id="fourth">
+            <div class="container px-4 px-lg-5 text-center">
+               
+                <div class="btnStart"> 자전거를 움직여요!</div>
+                <div class="dashboard">
+                    스피드 : <span class="speedDash"></span> 마하 |
+                    생명 :<span class="scoreDash"></span> |
+                    <span class="lifeDash"></span>
+                </div>
+                <div id="container"></div>
+                 <script src="bike/bike.js"></script>
+                 <a class="btn btn-primary btn-xl" href="#fifth" onclick="pause4(), play5()" id="btn_bike">다음으로</a>
+            </div>
+        </header>
+        <header class="masthead fifth d-flex align-items-center" id="fifth">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">맨손운동</h1>
+                <h3 class="mb-5"><em>connecting dots</em></h3>
+                <a class="btn btn-primary btn-xl" href="#sixth">다음으로</a>
+            </div>
+        </header>
+        <header class="masthead sixth d-flex align-items-center" id="sixth">
+            
+          
+<canvas id="canvas"></canvas>
+<div id="text">
+  <h1>Everything Connects</h1>
+</div>
+            <div class="container px-4 px-lg-5 text-center">
+                <canvas id="canvas"></canvas>
+                <script src="firework/firework.js"></script>
+                <!--<a class="btn btn-primary btn-xl" href="#fifth">다음으로</a>-->
+            </div>
+
+
+        </header>
+        <header class="masthead third d-flex align-items-center" id="third">
+            <div class="container px-4 px-lg-5 text-center">
+                <canvas id="area" width="640" height = "640"></canvas>
+                <div id="scoreboard">
+                <h2 id="gravity">Gravity:0</h2>
+                <h3 id="points">Points:0</h3>
+            </div>
+                <script src="bow/bow1.js"></script>
+                <a class="btn btn-primary btn-xl" href="#fourth" onclick="pause3(),play4()">다음으로</a>
+            </div>
+        </header>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Your Website 2021</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

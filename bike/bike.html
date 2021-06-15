@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>자전거</title>
+        <link rel="stylesheet" href="bike.css">
+        <link rel="stylesheet" href="../btnall.css">
+        <script src="../sound/sound.js"></script>
+    </head>
+    <body>
+        <audio id="audio1" autoplay>
+            <source src="../sound/자전거.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+          <a href="../tennis/tennis.html"><button class="btn-2"
+            type="button" onclick="pause1()" id="btn" style="display: none;">테니스로 움직이기</button></a>
+        
+            <div class="btnStart"> 자전거를 움직여요!</div>
+            <div class="dashboard">
+                스피드 : <span class="speedDash"></span> 마하 |
+                생명 :<span class="scoreDash"></span> |
+                <span class="lifeDash"></span>
+            </div>
+            <div id="container"></div>
+            <script src="bike.js"></script>
+    </body>
+</html>

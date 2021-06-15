@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>bow</title>
+     
+      <link rel="stylesheet" href="bow.css">
+      <link rel="stylesheet" href="../btnall.css">
+      <script src="../sound/js/sound.js"></script>
+    </head>
+       
+    <body>
+        
+            <audio id="audio1" autoplay>
+            <source src="../sound/국궁.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+          <a href="../bike/bike.html" ><button class="btn-2" id="btn"
+            type="button" onclick="pause1()" style="display: none;">로드자전거로 움직이기</button></a>
+                       
+        <canvas id="area" width="640" height = "640"><canvas>
+                <div id="scoreboard">
+                    <h2 id="gravity"></h2> <!--점수판텍스트 오류로 지움-->
+                    <h3 id="points"></h3>
+                </div>   
+    </body>
+    <script src="bow.js"></script>
+</html>

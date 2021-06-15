@@ -1,0 +1,44 @@
+body {
+	background: #000;
+	margin: 0;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+
+  #text {
+    position: absolute;
+	width: 100vw;
+	z-index: 1;
+	top: 40%;
+	color: #fff;
+	
+	font-size: 4vmin;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    align-items: center;
+  }
+  
+  #text h1 {
+	opacity: 0.9;
+	animation: fadein 3s;
+  }
+
+@font-face {
+	font-family: 'HeirofLightBold';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
